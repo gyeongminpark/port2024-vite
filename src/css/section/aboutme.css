@@ -1,0 +1,217 @@
+#aboutme {
+    width: 100%;
+    background: url(../../img/note.png);
+}
+
+.about_inner {
+    width: 90%;
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.about_gm {
+    position: sticky;
+    top: 200px;
+    left: 190px;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.about_gm .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay .text {
+    font-size: 24px;
+    text-align: center;
+}
+
+.about_gm:hover .overlay {
+    opacity: 1;
+}
+
+.about_gm img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_desc {
+    width: 50%;
+}
+
+.about_desc .time_line {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time_line h3 {
+    font-size: 3vw;
+    color: #000;
+    font-family: var(--subKor-font);
+}
+
+.me_content {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.time_line:nth-child(2) {
+    margin-left: 15px
+}
+
+.time_line h1 {
+    font-family: var(--subKor-font);
+    font-size: 2vw;
+    color: var(--mainBg-color);
+}
+
+td {
+    padding: 8px;
+    font-family: var(--mainKor-font);
+    font-size: 18px;
+}
+
+th {
+    text-align: left;
+}
+
+.skills-container {
+    position: relative;
+    width: 37vw;
+    height: 28vw;
+    background: url(../../img/skillbox.png) no-repeat center center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: -35px;
+}
+
+.skills-title {
+    position: absolute;
+    top: -28px;
+    left: 105px;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: var(--mainEng-font);
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.skill img {
+    width: 70%;
+    height: 70%;
+}
+
+.skill {
+    width: 9vw;
+    height: 9vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.about_desc .time_intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    .about_gm {
+        left: 10%;
+        width: 40%;
+    }
+
+    .about_gm img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .overlay .text {
+        display: none;
+    }
+
+    .time_line h3 {
+        font-size: 22px;
+    }
+
+    .me_content {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    td {
+        font-family: var(--mainKor-font);
+        font-size: 15px;
+    }
+
+    .skills-container {
+        background-image: none;
+    }
+
+    .skills-title {
+        left: 70px;
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+    .skills-grid {
+        padding-top: 20px;
+    }
+
+    .skill {
+        width: 35%;
+        height: 40%;
+        margin-left: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}

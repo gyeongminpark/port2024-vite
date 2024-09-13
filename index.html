@@ -1,20 +1,572 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다." />
-    <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js" />
-    <title>포트폴리오 사이트 만들기 😇 Vite-Site</title>
-
-    <link rel="icon" type="image/svg+xml" href="../src/img/ifkakao.png" />
-    <link rel="stylesheet" href="../src/css/style.css" />
+    <title>Gyoengmin</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <h1>Vite 시작하기</h1>
+    <header id="header" role="banner">
+        <div class="header_inner">
+            <nav class="header_nav" role="navigation" aria-label="메인메뉴" aria-controls="primary-menu"
+                aria-expanded="false">
+                <ul>
+                    <li><a href="#intro">Intro</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#graphics">Graphics</a></li>
+                    <li><a href="#publishing">Publishing</a></li>
+                    <li><a href="#aboutme">AboutMe</a></li>
+                </ul>
+            </nav>
+            <div class="header_nav_mobile" id="headerToggle" aria-controls="primary-menu" role="button" tabindex="0">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main id="main" role="main">
+        <section id="intro">
+            <div class="intro_inner">
+                <div class="inner_main">
+                    <img src="./src/img/메인.png" alt="">
+                </div>
+                <div class="inner_new">
+                    <img src="./src/img/new.png" alt="">
+                </div>
+                <div class="inner_memo">
+                    <img src="./src/img/memo.png" alt="">
+                </div>
+                <div class="home__title">
+                    <p>
+                        <span id="anim"></span><span id="portfolio"></span>
+                        <br />
+                        <br />
+                    </p>
+                </div>
+                <h1 class="intro_title">
+                    <p>DESIGN BY GYEONGMIN</p>
+                </h1>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="main-wrap">
+                <div class="project__content">
+                    <ul class="project__list">
+                        <li class="project__list-item">
+                            <a href="https://www.figma.com/design/QAIeXV3Ecz8dQXMChjC2m8/Untitled?node-id=0-1&t=vuUnhlfVfh1lSVSE-0"
+                                class="project__item-link pc-block" target="blank">
+                                <div class="project__item-link-txt">
+                                    <strong><span class="project__item-num">01</span>오투케</strong>
+                                </div>
+                            </a>
+                            <div class="project__item-wrap">
+                                <div class="project__item-txt-content">
+                                    <span class="project__item-num">01</span>
+                                    <h3 class="project__item-title">오투케</h3>
+                                    <p class="project__item-txt pc-block">원하는 날, 원하는 모양으로 특수하게 주문제작 된<br> 케이크를 다양하게 구경할
+                                        수 있고 <br>내가 직접 디자인해볼 수 있는 편리성이 좋은 앱을<br> 제작하고자 하였습니다. </p>
+                                    <p class="project__item-txt m-block">원하는 날, 원하는 모양으로 특수하게<br> 주문제작 된 케이크를 다양하게 구경할
+                                        수 있고 내가 직접 디자인해볼 수 있는<br>편리성이 좋은 앱을<br> 제작하고자 하였습니다.</p>
+                                    <ul class="project__item-skill">
+                                        <li><span>FIGMA</span></li>
+                                    </ul>
+                                    <a href="https://www.figma.com/design/QAIeXV3Ecz8dQXMChjC2m8/Untitled?node-id=0-1&t=vuUnhlfVfh1lSVSE-0"
+                                        class="project__item-txt-link pc-block" target="blank">VIEW MORE</a>
+                                </div>
+                                <div class="project__item-img">
+                                    <a href="https://www.figma.com/design/QAIeXV3Ecz8dQXMChjC2m8/Untitled?node-id=0-1&t=vuUnhlfVfh1lSVSE-0"
+                                        class="project__item-img-link" target="blank">
+                                        <img src="./src/img/오투케.png" alt="오투케 이미지">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__list-item">
+                            <a href="" class="project__item-link pc-block" target="blank">
+                                <div class="project__item-link-txt">
+                                    <strong><span class="project__item-num">02</span>소일베이커</strong>
+                                </div>
+                            </a>
+                            <div class="project__item-wrap">
+                                <div class="project__item-txt-content">
+                                    <span class="project__item-num">02</span>
+                                    <h3 class="project__item-title">소일베이커</h3>
+                                    <p class="project__item-txt pc-block">'흙을 굽는 사람'이라는 의미를 가진 <br>소일베이커는 요리하는 정성과 식사하는
+                                        <br>즐거움을 담을 수 있는 그릇을 굽습니다. <br>그런 소일베이커의 그릇들을 조금 더 잘 <br>보여줄 수 있도록 재구성하여 <br>만든
+                                        페이지입니다.
+                                    </p>
+                                    <p class="project__item-txt m-block">'흙을 굽는 사람'이라는 의미를 가진 <br>소일베이커는 요리하는 정성과 식사하는
+                                        <br>즐거움을 담을 수 있는 그릇을 굽습니다. <br>그런 소일베이커의 그릇들을 조금 더 잘 <br>보여줄 수 있도록 재구성하여 <br>만든
+                                        페이지입니다.
+                                    </p>
+                                    <ul class="project__item-skill">
+                                        <li><span>HTML</span></li>
+                                        <li><span>CSS</span></li>
+                                        <li><span>JQUERY</span></li>
+                                        <li><span>FIGMA</span></li>
+                                    </ul>
+                                    <a href="http://rudals2006.dothome.co.kr/24.03.04[%EC%86%8C%EC%9D%BC%EB%B2%A0%EC%9D%B4%EC%BB%A4]/index.html"
+                                        class="project__item-txt-link pc-block" target="blank">VIEW MORE</a>
+                                </div>
+                                <div class="project__item-img">
+                                    <a href="http://rudals2006.dothome.co.kr/24.03.04[%EC%86%8C%EC%9D%BC%EB%B2%A0%EC%9D%B4%EC%BB%A4]/index.html"
+                                        class="project__item-img-link" target="blank">
+                                        <img src="./src/img/SOIL.png" alt="소일베이커 이미지">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__list-item">
+                            <a href="" class="project__item-link pc-block" target="blank">
+                                <div class="project__item-link-txt">
+                                    <strong><span class="project__item-num">03</span>BEST영화</strong>
+                                </div>
+                            </a>
+                            <div class="project__item-wrap">
+                                <div class="project__item-txt-content">
+                                    <span class="project__item-num">03</span>
+                                    <h3 class="project__item-title">BEST영화</h3>
+                                    <p class="project__item-txt pc-block"> 영화를 주제로 하여 저만의 BEST영화를 <br>선정하였으며 동영상과 이미지를
+                                        <br>Grid로 적절하게 구성하여 <br>만든 페이지입니다.
+                                    </p>
+                                    <p class="project__item-txt m-block">원하는 날, 원하는 모양으로 특수하게<br> 주문제작 된 케이크를 다양하게 구경할
+                                        수 있고 내가 직접 디자인해볼 수 있는<br>편리성이 좋은 앱을<br> 제작하고자 하였습니다.</p>
+                                    <ul class="project__item-skill">
+                                        <li><span>Figma</span></li>
+                                    </ul>
+                                    <a href="http://rudals2006.dothome.co.kr/24.03.26[Grid]/grid1.html"
+                                        class="project__item-txt-link pc-block" target="blank">VIEW MORE</a>
+                                </div>
+                                <div class="project__item-img">
+                                    <a href="http://rudals2006.dothome.co.kr/24.03.26[Grid]/grid1.html"
+                                        class="project__item-img-link" target="blank">
+                                        <img src="./src/img/best영화.png" alt="오투케 이미지">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="graphics">
+            <div class="graphics_inner">
+
+                <div class="gp_line">
+                    <img src="./src/img/이음줄.png" alt="">
+                </div>
+
+                <div class="gp_wrap">
+                    <ul class="menu">
+                        <li><a href="#" data-filter=".card" class="active">Card Design</a></li>
+                        <li><a href="#" data-filter=".banner">Banner Design</a></li>
+                        <li><a href="#" data-filter=".detail">Detail Design</a></li>
+                    </ul>
+
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item card"><img src="./src/img/그래픽1.png" alt=""></div>
+                        <div class="grid-item card"><img src="./src/img/그래픽2.png" alt=""></div>
+                        <div class="grid-item card"><img src="./src/img/그래픽3.png" alt=""></div>
+                        <div class="grid-item banner"><img src="./src/img/가로 그래픽2.png" alt=""></div>
+                        <div class="grid-item banner"><img src="./src/img/가로 그래픽3.png" alt=""></div>
+                        <div class="grid-item detail"><img src="./src/img/디테일1.png" alt=""
+                                data-lightbox="./src/img/디테일.png"></div>
+                        <div class="grid-item card"><img src="./src/img/그래픽4.png" alt=""></div>
+                        <div class="grid-item banner"><img src="./src/img/가로 그래픽4.png" alt=""></div>
+                        <div class="grid-item banner"><img src="./src/img/가로 그래픽5.png" alt=""></div>
+                    </div>
+                </div>
+                <div id="lightbox" class="lightbox">
+                    <span class="close">&times;</span>
+                    <img class="lightbox-content">
+                    <a class="prev">&#10094;</a>
+                    <a class="next">&#10095;</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="publishing">
+            <div class="publishing_inner">
+                <h2 class="pb_title">
+                    <div class="line"></div>
+                    <p>PUBLISHING</p>
+                </h2>
+                <div class="pub_wrap">
+                    <article class="pub_item p1">
+                        <span class="num"><b>01.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/뮤고박스.png" alt=""></a>
+                        <p class="img_text">뮤고박스</p>
+                        <h3 class="title">뮤고박스</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.22[%EB%AE%A4%EA%B3%A0%EB%B0%95%EC%8A%A4]/index.html"
+                            target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p2">
+                        <span class="num"><b>02.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/ifkakao.png" alt=""></a>
+                        <p class="img_text">ifkakao</p>
+                        <h3 class="title">ifkakao</h3>
+                        <a href="" target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p3">
+                        <span class="num"><b>03.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/nexon pc방.png" alt=""></a>
+                        <p class="img_text">Nexon</br>pc방</p>
+                        <h3 class="title">Nexon pc방</h3>
+                        <a href="http://rudals2006.dothome.co.kr/23.12.13%20[Nexon]/index.html" target="_blank"
+                            class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p4">
+                        <span class="num"><b>04.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/아우디.png" alt=""></a>
+                        <p class="img_text">Audi</p>
+                        <h3 class="title">아우디</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.17%20[%EC%95%84%EC%9A%B0%EB%94%94]/index.html"
+                            target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p5">
+                        <span class="num"><b>05.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/텐바이텐.png" alt=""></a>
+                        <p class="img_text">텐바이텐</p>
+                        <h3 class="title">텐바이텐</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.18%20[%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90]/2024.04.01[%ED%85%90%EB%B0%94%EC%9D%B4%ED%85%90]/index.html"
+                            target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p6">
+                        <span class="num"><b>06.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/test1.png" alt=""></a>
+                        <p class="img_text">우담라이팅</p>
+                        <h3 class="title">우담라이팅</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.25[woodamlighting]/index.html" target="_blank"
+                            class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p7">
+                        <span class="num"><b>07.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/왕가탕후루.png" alt=""></a>
+                        <p class="img_text">왕가탕후루</p>
+                        <h3 class="title">왕가탕후루</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.29[%EC%99%95%EA%B0%80%ED%83%95%ED%9B%84%EB%A3%A8]/index.html"
+                            target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p8">
+                        <span class="num"><b>08.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/ETUDE.png" alt=""></a>
+                        <p class="img_text">ETUDE</br>HOUSE</p>
+                        <h3 class="title">ETUDEHOUSE</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.01.31[%EC%97%90%EB%9B%B0%EB%93%9C%ED%95%98%EC%9A%B0%EC%8A%A4]/index.html"
+                            target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p9">
+                        <span class="num"><b>09.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/왕의지밀.png" alt=""></a>
+                        <p class="img_text">왕의지밀</p>
+                        <h3 class="title">왕의지밀</h3>
+                        <a href="" target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p10">
+                        <span class="num"><b>10.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/동물원.png" alt=""></a>
+                        <p class="img_text">동물원</p>
+                        <h3 class="title">동물원</h3>
+                        <a href="" target="_blank" class="site">사이트 보기</a>
+                    </article>
+                    <article class="pub_item p11">
+                        <span class="num"><b>11.</b></span>
+                        <a href="#" target="_blank" class="img"><img src="./src/img/flexcuc.png" alt=""></a>
+                        <p class="img_text">Flexcuc</p>
+                        <h3 class="title">Flexcuc</h3>
+                        <a href="http://rudals2006.dothome.co.kr/24.02.01[swiper2]/index.html#" target="_blank"
+                            class="site">사이트 보기</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="aboutme">
+            <div class="i_am">
+                <ul class="flow_list">
+                    <li>
+                        <div class="splide ltl" id="splide1">
+                            <div class="splide__track splide__track-1">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">Introduction</li>
+                                    <li class="splide__slide">to</li>
+                                    <li class="splide__slide">Myself</li>
+                                    <li class="splide__slide">Introduction</li>
+                                    <li class="splide__slide">to</li>
+                                    <li class="splide__slide">Myself</li>
+                                    <li class="splide__slide">Introduction</li>
+                                    <li class="splide__slide">to</li>
+                                    <li class="splide__slide">Myself</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="about_inner">
+                <div class="about_gm">
+                    <img src="./src/img/gm.png" alt="">
+                    <div class="overlay">
+                        <div class="text">
+                            <p>NAME:&nbsp;박경민</p>
+                            <P>BIRTH:&nbsp;98.01.28</P>
+                            <p>MBTI:&nbsp;ISTJ</p>
+                            <p>TELL:&nbsp;010.9801.7840</p>
+                            <p>E-MAIL:&nbsp;mh7840@naver.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_desc">
+                    <div class="time_line">
+                        <h3>"끝없이 도전하고 성장하며
+                            발전하는 웹퍼블리셔가 되겠습니다."</h3>
+                        <div class="me_content">
+                            안녕하세요. 신입 웹퍼블리셔 박경민입니다.</br>
+                            저는 지금까지 제빵사, 바리스타와 같은 서비스직의 길을</br>
+                            오래 걸어왔고, 적성에 잘 맞았지만 체력상의 문제로</br>
+                            다른 길을 걸어보고 싶다고 생각했습니다. 아예 다른</br>
+                            직종으로 이직하는 것은 여러 문제로 인해서 쉽지 않았지만,</br>
+                            포기하지 않고 이 길이 마지막으로 걷는 내 길이다 생각하며</br>
+                            준비하였습니다. 지금은 부족하지만 끊임없는 노력으로</br>
+                            발전하는 사람이 되고 싶습니다.
+                        </div>
+                    </div>
+                    <div class="time_line">
+                        <h1>Timeline</h1>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>2016.10</td>
+                                    <td>운전면허증<br>2종 보통 취득</td>
+                                </tr>
+                                <tr>
+                                    <td>2019.03 - 2021.02</td>
+                                    <td>백석예술대학교<br>외식산업학부 졸업</td>
+                                </tr>
+                                <tr>
+                                    <td>2019.04 - 2020.05</td>
+                                    <td>서오릉 달 카페<br>아르바이트 근무</td>
+                                </tr>
+                                <tr>
+                                    <td>2020.03</td>
+                                    <td>제빵기능사<br>자격증 취득</td>
+                                </tr>
+                                <tr>
+                                    <td>2020.05 - 2022.04</td>
+                                    <td>텐파이프 구파발점<br>베이커리 카페 근무</td>
+                                </tr>
+                                <tr>
+                                    <td>2022.06 - 2023.07</td>
+                                    <td>투썸플레이스 신촌대로점<br>마감매니저 근무</td>
+                                </tr>
+                                <tr>
+                                    <td>2023.11 - 2024.06</td>
+                                    <td>MBC아카데미 신림점<br>UI/UX 웹디자인 웹퍼블리셔 프론트엔드 전문가 양성과정 수료</td>
+                                </tr>
+                                <tr>
+                                    <td>2024.04</td>
+                                    <td>웹디자인 기능사<br>자격증 취득</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="time_line">
+                        <div class="skills-container">
+                            <div class="skills-title">SKILLS</div>
+                            <div class="skills-grid">
+                                <div class="skill">
+                                    <img src="./src/img/html.png" alt="HTML5">
+                                </div>
+                                <div class="skill">
+                                    <img src="./src/img/js.png" alt="JavaScript">
+                                </div>
+                                <div class="skill">
+                                    <img src="./src/img/css.png" alt="CSS3">
+                                </div>
+                                <div class="skill">
+                                    <img src="./src/img/figma.png" alt="Figma">
+                                </div>
+                                <div class="skill">
+                                    <img src="./src/img/ai.png" alt="Adobe Illustrator">
+                                </div>
+                                <div class="skill">
+                                    <img src="./src/img/ps.png" alt="Adobe Photoshop">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
     <script type="module" src="./src/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var swiper2 = new Swiper(".mySwiper2", {
+            direction: "vertical",
+            slidesPerView: 1,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+        var $grid = $('.grid').imagesLoaded(function () {
+            $grid.isotope({
+                itemSelector: '.grid-item',
+
+                masonry: {
+                    columnWidth: 360,
+                    fitWidth: true,
+                },
+                filter: '.card'
+
+            });
+        });
+        $('.menu li a').on('click', function (event) {
+            event.preventDefault();
+            var filterValue = $(this).attr('data-filter');
+
+            $grid.isotope({ filter: filterValue });
+
+            $('.menu li a').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $(document).ready(function () {
+            $(window).on('scroll', function () {
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+                var viewportMiddle = viewportTop + $(window).height() / 2;
+
+                $('.project__list-item').each(function (index) {
+                    if (index < $('.project__list-item').length - 1) {
+                        var $currentItem = $(this);
+                        var $nextItem = $('.project__list-item').eq(index + 1);
+                        var $currentLink = $currentItem.find('.project__item-link');
+                        var nextItemTop = $nextItem.offset().top;
+                        var currentItemTop = $currentItem.offset().top;
+
+                        if (viewportBottom >= nextItemTop) {
+                            $currentLink.addClass('show');
+                        } else {
+                            $currentLink.removeClass('show');
+                        }
+
+                        var nextItemMiddle = nextItemTop + $nextItem.height() / 2;
+                        if (viewportBottom >= nextItemMiddle && viewportTop < nextItemTop + $nextItem.height()) {
+                            $nextItem.find('.project__item-link').addClass('show');
+                        } else {
+                            $nextItem.find('.project__item-link').removeClass('show');
+                        }
+                    }
+                });
+            });
+
+
+            $(window).trigger('scroll');
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var lightbox = document.getElementById("lightbox");
+            var lightboxContent = document.querySelector(".lightbox-content");
+            var images = document.querySelectorAll(".grid-item img");
+            var currentIndex = 0;
+            var zoomLevel = 1;  // 확대/축소 비율
+
+            function openLightbox(index) {
+                currentIndex = index;
+                lightbox.classList.add("open");
+
+                // data-lightbox 속성에 있는 이미지를 Lightbox에 표시
+                var lightboxImage = images[currentIndex].getAttribute("data-lightbox");
+                lightboxContent.src = lightboxImage || images[currentIndex].src;
+
+                // 이미지가 처음 열릴 때는 기본 확대 비율로 표시
+                zoomLevel = 1;
+                lightboxContent.style.transform = "scale(1)";
+
+                // 스크롤을 멈추기 위해 body에 overflow: hidden 적용
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeLightbox() {
+                lightbox.classList.remove("open");
+
+                // Lightbox가 닫힐 때 스크롤 다시 활성화
+                document.body.style.overflow = "";
+            }
+
+            function showNext() {
+                currentIndex = (currentIndex + 1) % images.length;
+                var lightboxImage = images[currentIndex].getAttribute("data-lightbox");
+                lightboxContent.src = lightboxImage || images[currentIndex].src;
+                resetZoom();
+            }
+
+            function showPrev() {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                var lightboxImage = images[currentIndex].getAttribute("data-lightbox");
+                lightboxContent.src = lightboxImage || images[currentIndex].src;
+                resetZoom();
+            }
+
+            // 확대/축소 초기화
+            function resetZoom() {
+                zoomLevel = 1;
+                lightboxContent.style.transform = "scale(1)";
+            }
+
+            // 마우스 휠을 통한 확대/축소
+            lightboxContent.addEventListener("wheel", function (event) {
+                event.preventDefault();
+                if (event.deltaY < 0) {
+                    // 마우스 휠을 위로 돌렸을 때 (확대)
+                    zoomLevel += 0.1;
+                } else {
+                    // 마우스 휠을 아래로 돌렸을 때 (축소)
+                    zoomLevel = Math.max(0.5, zoomLevel - 0.1);  // 최소 축소 비율은 0.5
+                }
+                lightboxContent.style.transform = "scale(" + zoomLevel + ")";
+            });
+
+            images.forEach(function (img, index) {
+                img.addEventListener("click", function () {
+                    openLightbox(index);
+                });
+            });
+
+            document.querySelector(".close").addEventListener("click", closeLightbox);
+            document.querySelector(".next").addEventListener("click", showNext);
+            document.querySelector(".prev").addEventListener("click", showPrev);
+        });
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Jua&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+.acme{font-family: "Acme", sans-serif;}
+.dohyeon{font-family: "Do Hyeon", sans-serif;} 
+.rubik{font-family: "Rubik", sans-serif;}
+.gasoek{font-family: "Gasoek One", sans-serif;}
+.black-han{font-family: "Black Han Sans", sans-serif;}
+.yeon-sung{
+    font-family: "Yeon Sung", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }

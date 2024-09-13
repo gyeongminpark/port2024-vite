@@ -1,0 +1,47 @@
+:root{
+    /* 메인영어폰트 */--mainEng-font:"Acme", sans-serif;
+    /* 메인한글폰트 */--mainKor-font:"Do Hyeon", sans-serif;
+    /* 메인숫자폰트 */--mainNum-font:"Rubik", sans-serif;
+    --subKor-font:"Gasoek One", sans-serif;
+    --subEng-font:"Black Han Sans", sans-serif;
+    --abKor-font:"Yeon Sung", system-ui;
+
+    /* 메인 bg컬러 */--mainBg-color:#289E2C;
+    /* 서브 bg100 */--subBg200:#FFB9D2;
+    /* 서브 bg200 */--subBg300:rgb(241, 221, 180);
+    /* 서브 bg300 */--subBg400:#efa764;
+    /* 서브 bg400 */--subBg100:#f5b135;
+    /* 서브 bg500 */--subBg500:#ff9900;
+
+    --white:#ffffff;
+    --black:#000;
+    --black100:#2b2b2b;
+    --black200:#434343;
+    --black300:#686868;
+    --black400:#e0e0e0;
+
+    font-family: var(--mainEng-font),var(--mainKor-font);
+    font-size: 1vw;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+    /* 폰트를 부드럽게 렌더링하기 위한 속성 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-synthesis: none;
+
+}
+
+@media screen and (max-width:768px) {
+    :root{
+        font-size: 14px;
+    } 
+}
+
+ body{
+        color: var(--black);
+        background-color: var(--mainBg-color);
+    }

@@ -1,0 +1,217 @@
+
+#graphics {
+    width: 100%;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    background: url(../../img/note.png);
+    padding-top: 80px;
+}
+
+.graphics_inner {
+    padding: 16px;
+    width: 100%;
+}
+
+.gp_line {
+    width: 100%;
+    height: 14vh;
+    text-align: center;
+}
+
+.gp_line img {
+    width: 85%;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 3vw;
+}
+
+.menu li a {
+    background: #FFB9D2;
+    border-radius: 30px;
+    font-size: 2vw;
+}
+
+.gp_wrap {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.grid {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid * {
+    padding: 10px;
+}
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-item {
+    max-width: 720px;
+    width: 360px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item.banner {
+    width: 720px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+ul.menu li a.active {
+    background: #000;
+    color: #fff;
+}
+
+ul.menu li a {
+    display: inline-block;
+    padding: 10px
+}
+
+.item {
+    display: none;
+}
+
+.item.card {
+    display: block;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.5s ease;
+}
+
+.lightbox.open {
+    display: block;
+    opacity: 1;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 90%;
+    max-height: 80vh;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.lightbox-content.zoomed {
+    transform: scale(1.5);
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-item {
+        flex: 0 1 calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu li {
+        display: block;
+        margin: 0 0 10px;
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .grid-item {
+        flex: 0 1 100%;
+    }
+}

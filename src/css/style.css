@@ -1,3 +1,18 @@
-h1{
-    color: blue;
+@charset "UTF-8";
+
+@import '@splidejs/splide/css'; 
+@import url(setting/font.css);
+@import url(setting/vars.css);
+@import url(setting/reset.css);
+
+@import url(section/header.css);
+@import url(section/intro.css); 
+@import url(section/project.css);
+@import url(section/graphics.css);
+@import url(section/publishing.css);
+@import url(section/aboutme.css);
+@import url(section/splide.css);
+
+body{
+    overflow-x: hidden;
 }
