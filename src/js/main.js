@@ -6,6 +6,7 @@ import {publishing} from "./publishing.js"
 import {project} from "./project.js"
 import {splide} from "./splide.js"
 import {menu} from "./menu.js"
+import {aboutme} from "./aboutme.js"
 
 
 window.addEventListener('load',function(){
@@ -17,5 +18,6 @@ window.addEventListener('load',function(){
     publishing()
     project()
     splide()
+    aboutme()
 })
 

@@ -24,152 +24,40 @@
     height: 100%;
 }
 
-.inner_new {
-    width: 10%;
-    height: 30%;
-    position: absolute;
-    top: 22vw;
-    right: 16vw;
-}
-
-.inner_new img {
-    width: 100%;
-    height: 100%;
-}
-
-.inner_memo {
-    width: 35%;
-    height: 60%;
-    position: absolute;
-    top: 9vw;
-    left: 30vw;
-}
-
-.inner_memo img {
-    width: 100%;
-    height: 100%;
-}
-
-.intro_title {
-    width: 5vw;
-    height: 80vh;
-    position: absolute;
-    top: 13vw;
-}
-
 .home__title {
-    margin: 0;
-    padding: 0;
-    font-size: 2em;
-    overflow: hidden;
-    width: 20%;
-    height: 20%;
     position: absolute;
     top: 50%;
-    left: 42.5%;
-    color: white;
+    left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-text-stroke-color: var(--mainBg-color);
-    -webkit-text-stroke-width: 3px;
+    width: 280px;
 }
 
-.home__title p {
+.home__title img {
     width: 100%;
     height: 100%;
-    text-align: center;
-    margin: 15% auto;
-    font-family: var(--subKor-font);
-
 }
 
-.intro_title p {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 1vw;
-    letter-spacing: 10px;
-    font-family: var(--mainEng-font);
-    color: white;
+.intro_bottom{
+    border-top: 1px solid #fff;
+    display: flex;
+    width: 90%;
+    height: 5%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+    color: #fff;
 }
-
-
-
-
-
 
 @media screen and (max-width: 1024px) {
-    .inner_main {
-        height: 70%;
-    }
-
-    .inner_new {
-        top: 29vw;
-        right: 15vw;
-        width: 12%;
-        height: 28%;
-    }
-
-    .inner_memo {
-        top: 16vw;
-        left: 25vw;
-        width: 40%;
-        height: 55%;
-    }
-
-    .home__title {
-        width: 17%;
-        height: 10%;
-        font-size: 2.4em;
-        top: 51%;
-        left: 39%;
-    }
-
-    .home__title p {
-        margin: 10% auto;
-    }
-
-    .intro_title {
-        width: 6vw;
-        top: 20vw;
-    }
-
-    .intro_title p {
-        font-size: 1.2vw;
+    .home__title{
+        width: 20%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .inner_main {
-        height: 60%;
+    .intro_bottom{
+        width: 80%;
     }
-
-    .inner_new {
-        top: 71vw;
-        right: 9vw;
-        width: 15%;
-        height: 17%;
-    }
-
-    .inner_memo {
-        top: 42vw;
-        left: 8vw;
-        width: 62%;
-        height: 40%;
-    }
-
-    .home__title {
-        width: 25%;
-        height: 6%;
-        font-size: 1.3em;
-        top: 51%;
-        left: 30%;
-    }
-
-    .home__title p {
-        margin: 5% auto;
-    }
-
-    .intro_title {
-        display: none;
-    }
-
 }

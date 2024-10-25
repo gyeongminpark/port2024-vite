@@ -40,8 +40,3 @@
         font-size: 14px;
     } 
 }
-
- body{
-        color: var(--black);
-        background-color: var(--mainBg-color);
-    }
