@@ -17,9 +17,6 @@
 #project {
     width: 100%;
     height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url(../../img/note.png);
     position: relative;
 }
@@ -33,17 +30,10 @@
 #home-slider {
     height: 80vh;
     width: 90vw;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.swiper-wrapper {
-    display: flex;
-    width: auto;
-    height: 100%;
-    position: relative;
 }
 
 .swiper-container {
@@ -66,15 +56,11 @@
 }
 
 .swiper-image {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-}
-
-.swiper-image-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 100%;
-    position: relative;
 }
 
 .swiper-image-inner.swiper-image-left {
@@ -82,7 +68,7 @@
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    width: 120%;
+    width: 65%;
     height: 100%;
 }
 
@@ -92,18 +78,16 @@
 }
 
 .swiper-image-inner.swiper-image-right {
-    background-color: #000;
-    width: 81%;
+    width: 45%;
     height: 100%;
-    float: right;
-    position: absolute;
-    top: 0;
-    right: -691px;
+    min-height: 455px;
+    background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 
 h1 {
     margin: 0 0 0 auto;
@@ -224,137 +208,62 @@ div.swiper-image img {
 }
 
 .swiper-slide {
-    -webkit-flex-shrink: 0;
-    flex-shrink: 0;
     position: relative;
     overflow: hidden;
     display: flex;
 }
 
-.swiper-container-autoheight,
-.swiper-container-autoheight .swiper-slide {
-    height: auto;
-}
-
-.swiper-container-autoheight .swiper-wrapper {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -webkit-transition-property: -webkit-transform, height;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    -ms-transition-property: -ms-transform;
-    transition-property: transform, height;
-}
-
 .swiper-pagination {
-    position: absolute;
-    text-align: center;
-    -webkit-transition: 300ms;
-    -moz-transition: 300ms;
-    -o-transition: 300ms;
-    transition: 300ms;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    z-index: 10;
-}
-
-.swiper-pagination.swiper-pagination-hidden {
-    opacity: 1;
-}
-
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-container-horizontal>.swiper-pagination-bullets {
-    bottom: 10px;
-    left: 0;
-    width: 100%;
+    right: 5px;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background: #fff;
-    opacity: 0.4;
-}
-
-button.swiper-pagination-bullet {
-    border: none;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: pointer;
-}
-
-.swiper-pagination-white .swiper-pagination-bullet {
-    background: #fff;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #fff;
+    background-color: #ff0080;
+    transform: scale(1.2);
+    box-shadow: 0px 0px 8px rgba(255, 105, 180, 0.6);
 }
 
-.swiper-pagination-white .swiper-pagination-bullet-active {
-    background: #fff;
+.swiper-pagination-bullet:hover {
+    background-color: #ff0080;
+    transform: scale(1.1);
 }
 
-.swiper-pagination-black .swiper-pagination-bullet-active {
-    background: #000;
-}
 
-.swiper-container-vertical>.swiper-pagination-bullets {
-    right: 15px;
-    bottom: 15px;
-}
-
-.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 5px 0;
-    display: block;
-}
-
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 5px;
-}
 
 @media screen and (max-width: 1024px) {
     .pro_title {
         width: 25%;
         left: 25px;
     }
-    .pro_title img{
+
+    .pro_title img {
         width: 100%;
         height: 100%;
     }
-    .mask{
+
+    .mask {
         display: none;
     }
-    .swiper-image-inner.swiper-image-left{
+
+    .swiper-image-inner.swiper-image-left {
         width: 100%;
     }
 
     .swiper-image-inner.swiper-image-right {
         width: 90%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        right: -440px; /* right 값을 설정하여 태블릿 화면에서도 보이도록 조정 */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        transition: all .5s linear;
+        height: 50%;
     }
 }
 
@@ -363,51 +272,52 @@ button.swiper-pagination-bullet {
         width: 100%;
         height: 80vh;
     }
-    
-    .swiper-wrapper {
-        flex-direction: column;
-    }
 
     .swiper-image {
         width: 100%;
-        height: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .swiper-image-inner {
         width: 100%;
         height: auto;
+        display: flex;
         flex-direction: column;
         position: relative;
+        align-items: center;
+        padding: 1rem 0;
     }
 
     .swiper-image-inner.swiper-image-left {
         width: 100%;
-        padding: 1rem 0;
     }
 
     .swiper-image-inner.swiper-image-right {
         width: 100%;
-        height: 100%;
-        position: absolute;
-        right: -22px;
-        top: 220px;
-        padding: 1rem 0;
+        height: auto;
+        padding: 1rem;
         background-color: #000;
-        margin-top: auto;
     }
 
-    h1, p.paragraph, h2.happy {
+    h1,
+    p.paragraph,
+    h2.happy {
         text-align: center;
         transform: none;
         opacity: 1;
     }
 
-    h2.happy{
+    h2.happy {
         font-size: 1.5rem;
     }
 
-    p.paragraph{
+    p.paragraph {
         font-size: 1rem;
+        max-width: 90%;
+        margin: 0 auto;
     }
 
     .swiper-pagination {
