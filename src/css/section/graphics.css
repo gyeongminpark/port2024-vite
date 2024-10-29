@@ -178,6 +178,8 @@
 }
 
 @media screen and (max-width: 768px) {
+
+
     .gp_content {
         display: flex;
         flex-direction: column;

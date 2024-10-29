@@ -165,11 +165,6 @@ p.img_text {
 }
 
 @media screen and (max-width:768px) {
-    .pub_item{
-        width: 3000px;
-        position: relative;
-    }
-
     .pub_item .img {
         margin: auto;
         width: 50vw;
@@ -185,18 +180,11 @@ p.img_text {
         opacity: 1;
         font-size: 7vw;
         text-align: center;
-        border: 1px solid #000;
     }
 
     .pb_bk {
         width: 100%;
         height: 50%;
-    }
-
-    .pub_wrap {
-        width: 100%;
-        height: 50%;
-        position: relative;
     }
 
     .pub_item {

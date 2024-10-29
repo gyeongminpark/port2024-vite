@@ -54,10 +54,18 @@
     .home__title{
         width: 20%;
     }
+    .intro_bottom{
+        left: 5%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .intro_bottom{
         width: 80%;
+        left: 10%;
+    }
+    .bo1 p,
+    .bo2 p{
+        font-size: 10px;        
     }
 }
